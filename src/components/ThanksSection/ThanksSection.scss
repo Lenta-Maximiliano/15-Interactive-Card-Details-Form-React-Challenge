@@ -1,0 +1,40 @@
+@use '../../styles/variables';
+
+.thanks-section{
+  width: 375px;
+  margin: 0 auto 60px;
+  &__img{
+    display: block;
+    margin: 0 auto 30px;
+  }
+  &__title{
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 4px;
+    color: variables.$Very-Dark-Violet;
+    margin-bottom: 24px;
+  }
+  &__text{
+    text-align: center;
+    color: variables.$Dark-Grayish-Violet;
+    font-size: 1.1em;
+    margin-bottom: 24px;
+  }
+  &__button{
+    background-color: variables.$Very-Dark-Violet;
+    color: variables.$Light-Grayish-Violet;
+    width: 100%;
+    height: 50px;
+    border-radius: 8px;
+    font-size: 1em;
+    letter-spacing: 1px;
+    font-family: variables.$font;
+    &:hover{
+      cursor: pointer;
+    }
+  }
+  @media (min-width: 1440px){
+    margin-top: 180px;
+  }
+}

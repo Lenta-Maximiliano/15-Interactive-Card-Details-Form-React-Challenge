@@ -1,0 +1,34 @@
+@use '../../styles/mixins';
+
+.card-front{
+  @include mixins.card('/images/bg-card-front.png');
+  @include mixins.card-position(126px, 18px, 187px, 167px);
+  z-index: 1;
+  letter-spacing: 2px;
+  &__logo{
+    width: 55px;
+    margin-bottom: 30px;
+  }
+  &__number{
+    margin-bottom: 15px;
+  }
+  &__details{
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.6em;
+    text-transform: uppercase;
+  }
+  @media (min-width: 1440px){
+    &__logo{
+      width: 86px;
+      margin-bottom: 55px;
+    }
+    &__number{
+      font-size: 1.6em;
+      margin-bottom: 25px;
+    }
+    &__details{
+      font-size: 0.8em;
+    }
+  }
+}

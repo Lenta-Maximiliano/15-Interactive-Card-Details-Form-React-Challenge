@@ -1,0 +1,26 @@
+@use 'variables';
+@use 'initial';
+@use 'mixins';
+
+.main-container{
+  width: 375px;
+  margin: auto;
+  &__bg-section{
+    background-image: url('/images/bg-main-mobile.png');
+    background-repeat: no-repeat;
+    height: 240px;
+    position: relative;
+  }
+  &__form-section{
+    padding: 90px 24px 45px;
+  }
+  @media (min-width: 1440px){
+    width: 1440px;
+    display: flex;
+    &__bg-section{
+      background-image: url('/images/bg-main-desktop.png');
+      width: 900px;
+      height: 900px;
+    }
+  }
+}
