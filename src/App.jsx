@@ -49,7 +49,7 @@ function App() {
                 } 
               }
             />
-          )}
+          )} 
         </section>
       </main>
       <Footer />
